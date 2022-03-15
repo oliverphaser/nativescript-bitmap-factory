@@ -1,1 +1,2 @@
-/// <reference path="../demo/node_modules/tns-core-modules/tns-core-modules.d.ts" /> Enable smart suggestions and completions in Visual Studio Code JavaScript projects.
+/// <reference path="./node_modules/@nativescript/core/platform/index.ios.d.ts" />
+/// <reference path="./node_modules/@nativescript/core/platform/index.android.d.ts"/>
