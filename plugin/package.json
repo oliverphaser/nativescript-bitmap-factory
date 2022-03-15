@@ -25,7 +25,7 @@
 		"demo.ios": "npm i && cd ../demo && ns run ios",
 		"demo.android": "npm i && cd ../demo && ns run android",
 		"demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build && cd ../demo && ns plugin remove nativescript-@oliverphaser/nativescript-bitmap-factory && tns plugin add ../src",
+		"plugin.prepare": "npm run build && cd ../demo && ns plugin remove @oliverphaser/nativescript-bitmap-factory && tns plugin add ../src",
 		"clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i",
 		"ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
 		"prepack": "npm run build.native"
