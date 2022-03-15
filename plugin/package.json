@@ -2,7 +2,8 @@
 	"name": "@oliverphaser/nativescript-bitmap-factory",
 	"version": "1.0.0",
 	"description": "A NativeScript module for creating and manipulating bitmap images. Forked from mkloubert and updated for NativeScript 8 with fixed iOS crop bug.",
-	"main": "eventify",
+	"main": "bitmap-factory",
+	"typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {
 			"android": "8.0.0",
@@ -14,15 +15,19 @@
 		"url": "https://github.com/oliverphaser/nativescript-bitmap-factory.git"
 	},
 	"scripts": {
-		"build": "npm run build.native",
+		"tsc": "tsc",
+		"build": "npm run tsc && npm run build.native",
 		"build.native": "node scripts/build-native.js",
-		"test.android": "cd ../demo && tns build android && tns test android --justlaunch",
-		"test.ios": "cd ../demo && tns build ios && tns test ios --justlaunch",
-		"demo.ios": "npm i && cd ../demo && tns run ios",
-		"demo.android": "npm i && cd ../demo && tns run android",
+		"test.android": "npm run tsc && npm run tslint && cd ../demo && ns build android && tns test android --justlaunch",
+		"test.ios": "npm run tsc && npm run tslint && cd ../demo && ns build ios && tns test ios --justlaunch",
+		"tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
+		"plugin.tscwatch": "npm run tsc -- -w",
+		"demo.ios": "npm i && cd ../demo && ns run ios",
+		"demo.android": "npm i && cd ../demo && ns run android",
 		"demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-@oliverphaser/nativescript-bitmap-factory && tns plugin add ../src",
+		"plugin.prepare": "npm run build && cd ../demo && ns plugin remove nativescript-@oliverphaser/nativescript-bitmap-factory && tns plugin add ../src",
 		"clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i",
+		"ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
 		"prepack": "npm run build.native"
 	},
 	"keywords": [
@@ -57,7 +62,9 @@
 	"devDependencies": {
 		"@nativescript/android": "~8.0.0",
 		"@nativescript/core": "~8.0.0",
-		"@nativescript/ios": "~8.0.0"
+		"@nativescript/ios": "~8.0.0",
+		"tslint": "^5.12.1",
+		"typescript": "^4.1.6"
 	},
 	"bootstrapper": "nativescript-plugin-seed"
 }
