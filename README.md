@@ -1,19 +1,25 @@
-[![npm](https://img.shields.io/npm/v/nativescript-bitmap-factory.svg)](https://www.npmjs.com/package/nativescript-bitmap-factory)
-[![npm](https://img.shields.io/npm/dt/nativescript-bitmap-factory.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-bitmap-factory)
+[npm]: https://img.shields.io/npm/v/nativescript-eventify.svg?color=949393
+[apple]: https://img.shields.io/badge/apple-%E2%9C%93-949393.svg?logo=apple&logoColor=white
+[android]: https://img.shields.io/badge/android-%E2%9C%93-949393.svg?logo=android&logoColor=white
+[support]: https://img.shields.io/static/v1.svg?logo=paypal&label=Support&message=oliverphaser&style=for-the-badge&color=0c67b5&labelColor=afb0b9
+
+[![npm]](https://www.npmjs.com/package/nativescript-eventify)
+![apple]
+![android]
+<br/>
+[![support]](https://paypal.me/oliverphaser)
 
 # NativeScript Bitmap Factory
 
 A [NativeScript](https://nativescript.org/) module for creating and manipulating bitmap images.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=U3FY9F6QMDQ4L&lc=DE&item_name=Marcel%20Kloubert&item_number=nativescript%2dbitmap%2dfactory&no_note=1&no_shipping=2&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+## NativeScript 8
+
+This will work only on NativeScript 8.
 
 ## NativeScript Toolbox
 
-This module is part of [nativescript-toolbox](https://github.com/mkloubert/nativescript-toolbox).
-
-## License
-
-[MIT license](https://raw.githubusercontent.com/mkloubert/nativescript-bitmap-factory/master/LICENSE)
+The originial module is part of [nativescript-toolbox](https://github.com/mkloubert/nativescript-toolbox).
 
 ## Platforms
 
@@ -22,19 +28,15 @@ This module is part of [nativescript-toolbox](https://github.com/mkloubert/nativ
 
 ## Installation
 
-Run
-
-```bash
-tns plugin add nativescript-bitmap-factory
 ```
-
-inside your app project to install the module.
+ns plugin add @oliverphaser/nativescript-bitmap-factory
+```
 
 ## Usage
 
 ```typescript
-import BitmapFactory = require("nativescript-bitmap-factory");
-import KnownColors = require("color/known-colors");
+import BitmapFactory = require("@oliverphaser/nativescript-bitmap-factory");
+import KnownColors = require("@nativescript/core/color/known-colors");
 
 // create a bitmap with 640x480
 var bmp = BitmapFactory.create(640, 480);
