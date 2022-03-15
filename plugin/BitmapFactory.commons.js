@@ -20,10 +20,10 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 
-var Application = require("application");
-var ImageSource = require('image-source');
-var KnownColors = require("color/known-colors");
-var TypeUtils = require("utils/types");
+var Application = require("@nativescript/core/application");
+var ImageSource = require('@nativescript/core/image-source');
+var KnownColors = require("@nativescript/core/color/known-colors");
+var TypeUtils = require("@nativescript/core/utils/types");
 
 const REGEX_COLOR = /^(#)?([a-f0-9]{3,4}|[a-f0-9]{6}|[a-f0-9]{8})$/i;
 exports.REGEX_COLOR = REGEX_COLOR;
