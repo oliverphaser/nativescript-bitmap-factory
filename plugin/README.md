@@ -1,9 +1,9 @@
-[npm]: https://img.shields.io/npm/v/nativescript-eventify.svg?color=949393
+[npm]: https://img.shields.io/npm/v/@oliverphaser/nativescript-bitmap-factory.svg?color=949393
 [apple]: https://img.shields.io/badge/apple-%E2%9C%93-949393.svg?logo=apple&logoColor=white
 [android]: https://img.shields.io/badge/android-%E2%9C%93-949393.svg?logo=android&logoColor=white
 [support]: https://img.shields.io/static/v1.svg?logo=paypal&label=Support&message=oliverphaser&style=for-the-badge&color=0c67b5&labelColor=afb0b9
 
-[![npm]](https://www.npmjs.com/package/nativescript-eventify)
+[![npm]](https://www.npmjs.com/package/@oliverphaser/nativescript-bitmap-factory)
 ![apple]
 ![android]
 <br/>

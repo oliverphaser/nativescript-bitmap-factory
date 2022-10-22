@@ -1,6 +1,5 @@
-/pushall.sh
-/demo/platforms
-/demo/node_modules
-/plugin/index.js.map
-/demo/app/*.map
-/demo/.vscode
+!/demo/platforms
+!/demo/node_modules
+!/plugin/index.js.map
+!/demo/app/*.map
+!/demo/.vscode
