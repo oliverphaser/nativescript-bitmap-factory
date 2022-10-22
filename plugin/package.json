@@ -1,6 +1,6 @@
 {
 	"name": "@oliverphaser/nativescript-bitmap-factory",
-	"version": "1.0.0",
+	"version": "1.0.9",
 	"description": "A NativeScript module for creating and manipulating bitmap images. Forked from mkloubert and updated for NativeScript 8 with fixed iOS crop bug.",
 	"main": "bitmap-factory",
 	"typings": "index.d.ts",
