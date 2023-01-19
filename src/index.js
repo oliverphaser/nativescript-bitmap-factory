@@ -21,7 +21,7 @@
 // DEALINGS IN THE SOFTWARE.
 "use strict";
 var BitmapFactory = require("./BitmapFactory");
-var TypeUtils = require("utils/types");
+var TypeUtils = require("@nativescript/core/utils/types");
 /**
  * List of outout formats.
  */
